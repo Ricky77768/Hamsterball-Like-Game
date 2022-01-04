@@ -168,7 +168,7 @@ public class LevelSelectController : MonoBehaviour {
 
     // TESTING ONLY
     public void startDebug() {
-        if (menuDisabled || playDisabled) { return; }
+        if (menuDisabled) { return; }
         menuDisabled = true;
         StartCoroutine(loadDebug());
     }
